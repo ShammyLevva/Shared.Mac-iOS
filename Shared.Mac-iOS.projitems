@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{194B93F9-9227-4701-8193-970154D9F379}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared.Mac-iOS</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\DefaultSettingValueAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\FileHandling.cs">
+      <DependentUpon>..\..\FTAnalyzer.Shared\FTAnalyzer.Shared\Properties\FileHandling.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\GeneralSettings.cs">
+      <DependentUpon>..\..\FTAnalyzer.Shared\FTAnalyzer.Shared\Properties\GeneralSettings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\NonGedcomDate.cs">
+      <DependentUpon>..\..\FTAnalyzer.Shared\FTAnalyzer.Shared\Properties\NonGedcomDate.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Properties\SettingsBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Properties\" />
+  </ItemGroup>
+</Project>
