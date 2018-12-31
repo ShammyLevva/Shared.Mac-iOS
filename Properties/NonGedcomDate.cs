@@ -38,6 +38,5 @@ namespace FTAnalyzer.Properties
         public string Setting { get; set; }
 
         public void Save() => SettingsBase.Save(Default, typeof(NonGedcomDate));
-
     }
 }

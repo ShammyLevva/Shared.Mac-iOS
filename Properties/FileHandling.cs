@@ -16,7 +16,6 @@ namespace FTAnalyzer.Properties
     public class FileHandling : UIViewController
 #endif
     {
-
         public FileHandling(IntPtr handle) : base(handle) { }
 
         public static FileHandling Default { get; } = (FileHandling)SettingsBase.Load(new FileHandling(new IntPtr()), typeof(FileHandling));
