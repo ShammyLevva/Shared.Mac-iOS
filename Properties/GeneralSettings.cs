@@ -15,6 +15,7 @@ namespace FTAnalyzer.Properties
     public class GeneralSettings : UIViewController
 #endif
     {
+
         public GeneralSettings(IntPtr handle) : base(handle) { }
 
         public static GeneralSettings Default { get; } = (GeneralSettings)SettingsBase.Load(new GeneralSettings(new IntPtr()), typeof(GeneralSettings));

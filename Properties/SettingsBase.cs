@@ -23,7 +23,7 @@ namespace FTAnalyzer.Properties
                     outputField.SetValue(output, Convert.ChangeType(value, fieldtype));
                 }
             }
-            Save(settings, type); // make sure defaults are saved if not already set.
+            Save(settings, type); // make sure defaults are saved if not already set
             return output;
         }
 

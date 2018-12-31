@@ -12,6 +12,7 @@ namespace FTAnalyzer.Properties
         {
             DefaultType = type;
             DefaultValue = defaultValue;
+
         }
     }
 }
