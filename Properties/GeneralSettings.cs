@@ -32,6 +32,9 @@ namespace FTAnalyzer.Properties
         public bool UseResidenceAsCensus { get; set; }
 
         [DefaultSettingValue("True")]
+        public bool ConvertResidenceFacts { get; set; }
+
+        [DefaultSettingValue("True")]
         public bool TolerateInaccurateCensusDate { get; set; }
 
         [DefaultSettingValue("True")]
@@ -82,7 +85,7 @@ namespace FTAnalyzer.Properties
         [DefaultSettingValue("False")]
         public bool ShowMultiAncestors { get; set; }
 
-        [DefaultSettingValue("True")]
+        [DefaultSettingValue("False")]
         public bool SkipCensusReferences { get; set; }
 
         [DefaultSettingValue("False")]
