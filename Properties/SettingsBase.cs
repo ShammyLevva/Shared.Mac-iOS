@@ -17,7 +17,7 @@ namespace FTAnalyzer.Properties
                 if (defaultValue.Length > 0) // only process fields with a custom attribute
                 {
                     Type fieldtype = defaultValue[0].DefaultType;
-                    string param = userDefaults.StringForKey($"{type.ToString()}.{property.Name}");
+                    string param = userDefaults.StringForKey($"{type}.{property.Name}");
                     string value = param ?? defaultValue[0].DefaultValue;
                     PropertyInfo outputField = output.GetType().GetProperty(property.Name);
                     outputField.SetValue(output, Convert.ChangeType(value, fieldtype));
