@@ -6,5 +6,8 @@
 
         [DefaultSettingValue("00000000-0000-0000-0000-000000000000")]
         public string GUID { get; set; } // used to ensure analytics is uniqe between users
+
+        [DefaultSettingValue(".co.uk")]
+        public string defaultURLRegion { get; set; } 
     }
 }
