@@ -94,6 +94,9 @@ namespace FTAnalyzer.Properties
         [DefaultSettingValue("True")]
         public bool HideIgnoredDuplicates { get; set; }
 
+        [DefaultSettingValue("True")]
+        public bool IncludeAlternateFacts { get; set; }
+
         public void Save() => SettingsBase.Save(Default, typeof(GeneralSettings));
     }
 }
